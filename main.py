@@ -125,12 +125,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {
-        "message": "Auto Pricing API",
-        "version": "1.0.0",
-        "docs": "/docs",
-        "health": "/health",
-    }
+    return {"status": "API running successfully"}
 
 
 # ---------------------------------------------------------------------------
